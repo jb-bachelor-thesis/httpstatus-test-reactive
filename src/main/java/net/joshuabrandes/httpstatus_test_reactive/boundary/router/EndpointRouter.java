@@ -19,7 +19,7 @@ public class EndpointRouter {
     }
 
     @Bean
-    RouterFunction<ServerResponse> getStatus(RouterFunction<ServerResponse> getStatus) {
+    RouterFunction<ServerResponse> getStatus() {
         return route(GET("v1/status"), _ -> endpointHandler.getStatus());
     }
 }
